@@ -8,6 +8,7 @@ class AnimeMovie extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'Raleway'),
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.home,
       onGenerateRoute: appRouter.onGenerateRoute,
