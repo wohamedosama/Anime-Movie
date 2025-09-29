@@ -23,7 +23,7 @@ class _AnimeTypeListViewState extends State<AnimeTypeListView> {
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+      margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {

@@ -1,7 +1,9 @@
 import 'package:anime_moive/core/theme/app_colors.dart';
 import 'package:anime_moive/core/widgets/custom_text_widget.dart';
+import 'package:anime_moive/features/home/logic/anime_item_list.dart';
 import 'package:anime_moive/features/home/presentation/widgets/anime_type_list_view.dart';
 import 'package:anime_moive/features/home/presentation/widgets/linear_gradient_container.dart';
+import 'package:anime_moive/features/home/presentation/widgets/list_view_to_display_the_movie_cover.dart';
 import 'package:anime_moive/features/home/presentation/widgets/star_background_image.dart';
 import 'package:flutter/material.dart';
 
@@ -15,25 +17,37 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Stack(
           //  fit: StackFit.expand,
           children: [
-            CustomLinearGradientContainer(),
-            StarBackgroundImage(),
-
+            const CustomLinearGradientContainer(),
+            const StarBackgroundImage(),
             Padding(
-              padding: EdgeInsets.only(left: 14.0, top: 24, bottom: 24),
+              padding: const EdgeInsets.only(left: 14.0, top: 24, bottom: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CustomText(
+                  const CustomText(
                     text: 'Where Anime Comes Alive!',
                     color: AppColors.navyColor,
                   ),
-                  SizedBox(height: 24),
-                  AnimeTypeListView(),
+                  const SizedBox(height: 24),
+                  const AnimeTypeListView(),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    height: 400,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return ListViewItemToDisplayTheMovieCover(
+                          animeModel: AnimeItemList.animeITemList[index],
+                        );
+                      },
+                      itemCount: AnimeItemList.animeITemList.length,
+                    ),
+                  ),
                 ],
               ),
             ),
