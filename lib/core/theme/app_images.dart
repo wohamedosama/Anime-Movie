@@ -23,8 +23,24 @@ class Assets {
   static const String assetsSvgsStar = 'assets/svgs/star.svg';
 
   /// Assets for assetsSvgsStar
-  /// assets/images/StarSubmitReview.png
-  static const String assetsImagesStar = "assets/images/StarSubmitReview.png";
+  /// assets/svgs/homeIcon.svg
+  static const String assetsSvgsHomeIcon = 'assets/svgs/homeIcon.svg';
+
+  /// Assets for assetsSvgsStar
+  /// assets/svgs/internetIcon.svg
+  static const String assetsSvgsInternetIcon = 'assets/svgs/internetIcon.svg';
+
+  /// Assets for assetsSvgsStar
+  /// assets/svgs/libraryIcon.svg
+  static const String assetsSvgsLibraryIcon = 'assets/svgs/libraryIcon.svg';
+
+  /// Assets for assetsSvgsStar
+  /// assets/svgs/searchIcon.svg
+  static const String assetsSvgsSearchIcon = 'assets/svgs/searchIcon.svg';
+
+  /// Assets for assetsSvgsStar
+  /// assets/svgs/settingIcon.svg'
+  static const String assetsSvgsSettingsIcon = 'assets/svgs/settingIcon.svg';
 
   /// Assets for assetsImagesConan
   /// assets/images/Conan.png
