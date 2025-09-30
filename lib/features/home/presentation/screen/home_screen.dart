@@ -1,3 +1,5 @@
+import 'package:anime_moive/core/helper/extension.dart';
+import 'package:anime_moive/core/routes/routes.dart';
 import 'package:anime_moive/core/theme/app_colors.dart';
 import 'package:anime_moive/core/widgets/custom_text_widget.dart';
 import 'package:anime_moive/features/home/logic/anime_item_list.dart';
@@ -39,16 +41,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     const SizedBox(height: 24),
                     const AnimeTypeListView(),
                     const SizedBox(height: 20),
-                    SizedBox(
-                      height: 400,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return ListViewItemToDisplayTheMovieCover(
-                            animeModel: AnimeItemList.animeITemList[index],
-                          );
-                        },
-                        itemCount: AnimeItemList.animeITemList.length,
+                    InkWell(
+                      onTap: () {
+                        context.pushNamed(Routes.details);
+                      },
+                      child: SizedBox(
+                        height: 400,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return ListViewItemToDisplayTheMovieCover(
+                              animeModel: AnimeItemList.animeITemList[index],
+                            );
+                          },
+                          itemCount: AnimeItemList.animeITemList.length,
+                        ),
                       ),
                     ),
                     const SizedBox(height: 12),
