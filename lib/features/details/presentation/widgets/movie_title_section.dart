@@ -1,11 +1,12 @@
 import 'package:anime_moive/core/theme/app_images.dart';
 import 'package:anime_moive/core/widgets/custom_text_widget.dart';
+import 'package:anime_moive/features/home/data/anime_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class MovieTitleSection extends StatelessWidget {
-  const MovieTitleSection({super.key});
-
+  const MovieTitleSection({super.key, required this.animeModel});
+  final AnimeModel animeModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -15,9 +16,9 @@ class MovieTitleSection extends StatelessWidget {
           children: [
             SvgPicture.asset(Assets.assetsSvgsFire),
             const SizedBox(width: 8),
-            const Expanded(
+            Expanded(
               child: CustomText(
-                text: 'Demon Slayer: Kimetsu no Yaiba follows Tanjiro',
+                text: animeModel.animeName,
                 color: Colors.white,
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
@@ -26,11 +27,10 @@ class MovieTitleSection extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 8),
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 12.0),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12.0),
           child: CustomText(
-            text:
-                'A young boy named Tanjiro Kamado, who becomes a demon slayer after his family is slaughtered by demons and his younger sister Nezuko is turned into a demon.',
+            text: animeModel.discreption!,
             maxLine: 5,
             color: Colors.white,
             fontSize: 15,

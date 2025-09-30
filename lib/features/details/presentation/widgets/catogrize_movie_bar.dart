@@ -1,10 +1,11 @@
 import 'package:anime_moive/core/theme/app_colors.dart';
 import 'package:anime_moive/core/widgets/custom_text_widget.dart';
+import 'package:anime_moive/features/home/data/anime_model.dart';
 import 'package:flutter/material.dart';
 
 class CategorizeMoive extends StatelessWidget {
-  const CategorizeMoive({super.key});
-
+  const CategorizeMoive({super.key, required this.animeModel});
+  final AnimeModel animeModel;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -13,7 +14,7 @@ class CategorizeMoive extends StatelessWidget {
       children: [
         _buildCategorizeMovieType(text: 'Dark Fantasy'),
         _buildCategorizeMovieType(text: 'Action'),
-        _buildCategorizeMovieType(text: 'Adventure'),
+        _buildCategorizeMovieType(text: animeModel.animeType),
       ],
     );
   }

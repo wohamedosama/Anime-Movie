@@ -41,21 +41,24 @@ class _HomeScreenState extends State<HomeScreen> {
                     const SizedBox(height: 24),
                     const AnimeTypeListView(),
                     const SizedBox(height: 20),
-                    InkWell(
-                      onTap: () {
-                        context.pushNamed(Routes.details);
-                      },
-                      child: SizedBox(
-                        height: 400,
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            return ListViewItemToDisplayTheMovieCover(
+                    SizedBox(
+                      height: 400,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return InkWell(
+                            onTap: () {
+                              context.pushNamed(
+                                Routes.details,
+                                argument: AnimeItemList.animeITemList[index],
+                              );
+                            },
+                            child: ListViewItemToDisplayTheMovieCover(
                               animeModel: AnimeItemList.animeITemList[index],
-                            );
-                          },
-                          itemCount: AnimeItemList.animeITemList.length,
-                        ),
+                            ),
+                          );
+                        },
+                        itemCount: AnimeItemList.animeITemList.length,
                       ),
                     ),
                     const SizedBox(height: 12),
