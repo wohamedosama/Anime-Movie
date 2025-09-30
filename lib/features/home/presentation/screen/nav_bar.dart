@@ -22,12 +22,11 @@ class _NavBarState extends State<NavBar> {
       controller: _controller,
       screens: NavBarItems.screess(),
       items: NavBarItems.navBarItem,
-
+      handleAndroidBackButtonPress: true,
       resizeToAvoidBottomInset: true,
       hideNavigationBarWhenKeyboardAppears: true,
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.only(top: 8),
       backgroundColor: AppColors.whiteColor,
-
       isVisible: true,
       animationSettings: const NavBarAnimationSettings(
         navBarItemAnimation: ItemAnimationSettings(
