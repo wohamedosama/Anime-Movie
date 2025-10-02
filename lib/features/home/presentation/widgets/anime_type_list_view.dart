@@ -1,4 +1,4 @@
-import 'package:anime_moive/features/home/presentation/widgets/build_tab_widget.dart';
+import 'build_tab_widget.dart';
 import 'package:flutter/material.dart';
 
 class AnimeTypeListView extends StatefulWidget {

@@ -1,9 +1,9 @@
-import 'package:anime_moive/core/theme/app_colors.dart';
-import 'package:anime_moive/core/theme/app_images.dart';
-import 'package:anime_moive/features/home/presentation/screen/home_screen.dart';
-import 'package:anime_moive/features/screens/library_screen.dart';
-import 'package:anime_moive/features/screens/search_screen.dart';
-import 'package:anime_moive/features/screens/settings_screen.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_images.dart';
+import 'home_screen.dart';
+import '../../../screens/library_screen.dart';
+import '../../../screens/search_screen.dart';
+import '../../../screens/settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';

@@ -1,6 +1,6 @@
-import 'package:anime_moive/core/theme/app_images.dart';
-import 'package:anime_moive/core/widgets/custom_text_widget.dart';
-import 'package:anime_moive/features/home/data/anime_model.dart';
+import '../../../../core/theme/app_images.dart';
+import '../../../../core/widgets/custom_text_widget.dart';
+import '../../../home/data/anime_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

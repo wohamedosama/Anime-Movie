@@ -1,5 +1,5 @@
-import 'package:anime_moive/core/theme/app_images.dart';
-import 'package:anime_moive/features/home/data/anime_model.dart';
+import '../../../core/theme/app_images.dart';
+import '../data/anime_model.dart';
 
 class AnimeItemList {
   static List<AnimeModel> animeITemList = [

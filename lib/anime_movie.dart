@@ -1,6 +1,7 @@
-import 'package:anime_moive/core/routes/app_router.dart';
-import 'package:anime_moive/core/routes/routes.dart';
 import 'package:flutter/material.dart';
+
+import 'core/routes/app_router.dart';
+import 'core/routes/routes.dart';
 
 class AnimeMovie extends StatelessWidget {
   const AnimeMovie({super.key, required this.appRouter});
