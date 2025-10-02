@@ -1,5 +1,5 @@
-import 'package:anime_moive/core/theme/app_colors.dart';
-import 'package:anime_moive/features/home/presentation/screen/nav_bar_items.dart';
+import '../../../../core/theme/app_colors.dart';
+import 'nav_bar_items.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 

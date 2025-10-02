@@ -1,6 +1,7 @@
-import 'package:anime_moive/core/theme/app_colors.dart';
-import 'package:anime_moive/core/widgets/custom_text_widget.dart';
 import 'package:flutter/material.dart';
+
+import '../../core/theme/app_colors.dart';
+import '../../core/widgets/custom_text_widget.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});

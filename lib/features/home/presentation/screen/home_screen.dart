@@ -1,15 +1,16 @@
-import 'package:anime_moive/core/helper/extension.dart';
-import 'package:anime_moive/core/routes/routes.dart';
-import 'package:anime_moive/core/theme/app_colors.dart';
-import 'package:anime_moive/core/widgets/custom_text_widget.dart';
-import 'package:anime_moive/features/home/logic/anime_item_list.dart';
-import 'package:anime_moive/features/home/logic/characters_item_list.dart';
-import 'package:anime_moive/features/home/presentation/widgets/anime_type_list_view.dart';
-import 'package:anime_moive/features/home/presentation/widgets/linear_gradient_container.dart';
-import 'package:anime_moive/features/home/presentation/widgets/list_view_to_display_the_movie_cover.dart';
-import 'package:anime_moive/features/home/presentation/widgets/list_view_to_display_top_characters.dart';
-import 'package:anime_moive/features/home/presentation/widgets/star_background_image.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/helper/extension.dart';
+import '../../../../core/routes/routes.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/widgets/custom_text_widget.dart';
+import '../../logic/anime_item_list.dart';
+import '../../logic/characters_item_list.dart';
+import '../widgets/anime_type_list_view.dart';
+import '../widgets/linear_gradient_container.dart';
+import '../widgets/list_view_to_display_the_movie_cover.dart';
+import '../widgets/list_view_to_display_top_characters.dart';
+import '../widgets/star_background_image.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

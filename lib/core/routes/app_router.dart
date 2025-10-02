@@ -1,10 +1,11 @@
-import 'package:anime_moive/core/routes/routes.dart';
-import 'package:anime_moive/features/details/presentation/screen/details_screen.dart';
-import 'package:anime_moive/features/home/data/anime_model.dart';
-import 'package:anime_moive/features/home/presentation/screen/home_screen.dart';
-import 'package:anime_moive/features/home/presentation/screen/nav_bar.dart';
-import 'package:anime_moive/features/upgrade_plan/presentation/screen/details_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../../features/details/presentation/screen/details_screen.dart';
+import '../../features/home/data/anime_model.dart';
+import '../../features/home/presentation/screen/home_screen.dart';
+import '../../features/home/presentation/screen/nav_bar.dart';
+import '../../features/upgrade_plan/presentation/screen/upgrade_plan.dart';
+import 'routes.dart';
 
 class AppRouter {
   Route onGenerateRoute(RouteSettings settings) {

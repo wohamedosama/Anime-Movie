@@ -1,7 +1,8 @@
-import 'package:anime_moive/core/theme/app_images.dart';
-import 'package:anime_moive/core/widgets/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../../core/theme/app_images.dart';
+import '../../../../core/widgets/custom_text_widget.dart';
 
 class BuildRatingContainer extends StatelessWidget {
   const BuildRatingContainer({super.key, required this.ratingText});

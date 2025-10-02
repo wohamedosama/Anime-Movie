@@ -1,11 +1,11 @@
-import 'package:anime_moive/core/theme/app_colors.dart';
-import 'package:anime_moive/core/widgets/custom_divider.dart';
-import 'package:anime_moive/features/details/presentation/widgets/action_buttons.dart';
-import 'package:anime_moive/features/details/presentation/widgets/catogrize_movie_bar.dart';
-import 'package:anime_moive/features/details/presentation/widgets/movie_backgroung_image_details_screen.dart';
-import 'package:anime_moive/features/details/presentation/widgets/movie_stats_row.dart';
-import 'package:anime_moive/features/details/presentation/widgets/movie_title_section.dart';
-import 'package:anime_moive/features/home/data/anime_model.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/widgets/custom_divider.dart';
+import '../widgets/action_buttons.dart';
+import '../widgets/catogrize_movie_bar.dart';
+import '../widgets/movie_backgroung_image_details_screen.dart';
+import '../widgets/movie_stats_row.dart';
+import '../widgets/movie_title_section.dart';
+import '../../../home/data/anime_model.dart';
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {

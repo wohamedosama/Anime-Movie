@@ -1,7 +1,7 @@
-import 'package:anime_moive/core/theme/app_colors.dart';
-import 'package:anime_moive/core/widgets/custom_text_widget.dart';
-import 'package:anime_moive/features/home/data/anime_model.dart';
-import 'package:anime_moive/features/home/presentation/widgets/build_rating_container.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/widgets/custom_text_widget.dart';
+import '../../data/anime_model.dart';
+import 'build_rating_container.dart';
 import 'package:flutter/material.dart';
 
 class ListViewItemToDisplayTheMovieCover extends StatelessWidget {

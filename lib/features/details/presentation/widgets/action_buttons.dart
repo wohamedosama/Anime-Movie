@@ -1,6 +1,8 @@
-import 'package:anime_moive/core/theme/app_colors.dart';
-import 'package:anime_moive/core/theme/app_images.dart';
-import 'package:anime_moive/core/widgets/custom_elevated_button.dart';
+import '../../../../core/helper/extension.dart';
+import '../../../../core/routes/routes.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_images.dart';
+import '../../../../core/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 class ActionButtons extends StatelessWidget {
@@ -8,18 +10,21 @@ class ActionButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(
+        const Expanded(
           child: CustomElevatedButton(
             backgroundColor: Color(0xff8D8998),
             svgName: Assets.assetsSvgsPreviewIcon,
             text: 'preview',
           ),
         ),
-        SizedBox(width: 12),
+        const SizedBox(width: 12),
         Expanded(
           child: CustomElevatedButton(
+            onPressed: () {
+              context.pushNamed(Routes.upgradePlan);
+            },
             svgName: Assets.assetsSvgsWatchNow,
             text: 'Watch Now',
             backgroundColor: AppColors.primaryColor,
