@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../features/details/presentation/screen/details_screen.dart';
-import '../../features/home/data/anime_model.dart';
+import '../../features/home/data/model/anime_model.dart';
 import '../../features/home/presentation/screen/home_screen.dart';
 import '../../features/home/presentation/screen/nav_bar.dart';
 import '../../features/upgrade_plan/presentation/screen/upgrade_plan.dart';

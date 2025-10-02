@@ -1,6 +1,6 @@
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/widgets/custom_text_widget.dart';
-import '../../../home/data/anime_model.dart';
+import '../../../home/data/model/anime_model.dart';
 import 'package:flutter/material.dart';
 
 class CategorizeMoive extends StatelessWidget {

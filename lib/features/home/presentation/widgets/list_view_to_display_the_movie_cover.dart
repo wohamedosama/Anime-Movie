@@ -1,8 +1,9 @@
+import 'package:flutter/material.dart';
+
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/widgets/custom_text_widget.dart';
-import '../../data/anime_model.dart';
+import '../../data/model/anime_model.dart';
 import 'build_rating_container.dart';
-import 'package:flutter/material.dart';
 
 class ListViewItemToDisplayTheMovieCover extends StatelessWidget {
   const ListViewItemToDisplayTheMovieCover({
@@ -23,7 +24,7 @@ class ListViewItemToDisplayTheMovieCover extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         CustomText(
-          text: animeModel.animeName,
+          text: animeModel.name,
           fontSize: 18,
           color: AppColors.navyColor,
         ),
@@ -46,7 +47,7 @@ class ListViewItemToDisplayTheMovieCover extends StatelessWidget {
         width: 245,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(animeModel.ainmeCover),
+            image: AssetImage(animeModel.coverImage),
             fit: BoxFit.cover,
           ),
         ),

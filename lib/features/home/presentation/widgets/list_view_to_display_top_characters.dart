@@ -1,6 +1,6 @@
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/widgets/custom_text_widget.dart';
-import '../../data/characters_model.dart';
+import '../../data/model/characters_model.dart';
 import 'build_character_image_container.dart';
 import 'package:flutter/material.dart';
 

@@ -1,8 +1,9 @@
-import '../../../../core/theme/app_images.dart';
-import '../../../../core/widgets/custom_text_widget.dart';
-import '../../../home/data/anime_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../../core/theme/app_images.dart';
+import '../../../../core/widgets/custom_text_widget.dart';
+import '../../../home/data/model/anime_model.dart';
 
 class MovieTitleSection extends StatelessWidget {
   const MovieTitleSection({super.key, required this.animeModel});
@@ -18,7 +19,7 @@ class MovieTitleSection extends StatelessWidget {
             const SizedBox(width: 8),
             Expanded(
               child: CustomText(
-                text: animeModel.animeName,
+                text: animeModel.name,
                 color: Colors.white,
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
@@ -30,7 +31,7 @@ class MovieTitleSection extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12.0),
           child: CustomText(
-            text: animeModel.discreption!,
+            text: animeModel.description!,
             maxLine: 5,
             color: Colors.white,
             fontSize: 15,

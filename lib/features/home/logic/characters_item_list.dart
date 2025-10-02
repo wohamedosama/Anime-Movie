@@ -1,5 +1,5 @@
 import '../../../core/theme/app_images.dart';
-import '../data/characters_model.dart';
+import '../data/model/characters_model.dart';
 
 class CharactersItemList {
   static List<CharactersModel> characters = [

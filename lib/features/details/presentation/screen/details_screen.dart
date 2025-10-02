@@ -1,12 +1,13 @@
+import 'package:flutter/material.dart';
+
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/widgets/custom_divider.dart';
+import '../../../home/data/model/anime_model.dart';
 import '../widgets/action_buttons.dart';
 import '../widgets/catogrize_movie_bar.dart';
 import '../widgets/movie_backgroung_image_details_screen.dart';
 import '../widgets/movie_stats_row.dart';
 import '../widgets/movie_title_section.dart';
-import '../../../home/data/anime_model.dart';
-import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({super.key, required this.anime});
@@ -21,7 +22,7 @@ class DetailsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              MovieBackgroungImageinDetailsScreen(image: anime.ainmeCover),
+              MovieBackgroungImageinDetailsScreen(image: anime.coverImage),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(

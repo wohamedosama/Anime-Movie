@@ -1,7 +1,8 @@
-import '../../../../core/theme/app_images.dart';
-import 'build_views_details_and_count_of_sessons.dart';
-import '../../../home/data/anime_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/theme/app_images.dart';
+import '../../../home/data/model/anime_model.dart';
+import 'build_views_details_and_count_of_sessons.dart';
 
 class MovieStatsRow extends StatelessWidget {
   const MovieStatsRow({super.key, required this.animeModel});
@@ -20,13 +21,13 @@ class MovieStatsRow extends StatelessWidget {
         Expanded(
           child: BuildViewsDetailsAndCountOfSessons(
             iconPath: Assets.assetsSvgsClapIcons,
-            text: '${animeModel.clap}K clap',
+            text: '${animeModel.clapCount}K clap',
           ),
         ),
         Expanded(
           child: BuildViewsDetailsAndCountOfSessons(
             iconPath: Assets.assetsSvgsSessonIcon,
-            text: '${animeModel.countOfSessons} Seasons',
+            text: '${animeModel.seasonCount} Seasons',
           ),
         ),
       ],
